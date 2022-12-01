@@ -28,7 +28,7 @@ provider "haproxy" {
 
 ### Required
 
-- **insecure** (Boolean) Scheme for request. If not set, https will be use.
-- **password** (String) Password use for authentification
-- **server_addr** (String) HAProxy Dataplaneapi server address.
-- **username** (String) Username use for authentification
+- `insecure` (Boolean) Scheme for request. If not set, https will be use.
+- `password` (String) Password use for authentification
+- `server_addr` (String) HAProxy Dataplaneapi server address.
+- `username` (String) Username use for authentification

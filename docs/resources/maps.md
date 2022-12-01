@@ -25,14 +25,17 @@ resource "haproxy_maps" "my-key" {
 
 ### Required
 
-- **key** (String) Key name
-- **map** (String) The HAProxy map name. More informations : https://www.haproxy.com/fr/blog/introduction-to-haproxy-maps/
+- `key` (String) Key name
+- `map` (String) The HAProxy map name. More informations : https://www.haproxy.com/fr/blog/introduction-to-haproxy-maps/
 
 ### Optional
 
-- **force_sync** (Boolean) If true, immediately syncs changes to disk
-- **id** (String) The ID of this resource.
-- **value** (String) Value name. Default value 'defaultValue'
+- `force_sync` (Boolean) If true, immediately syncs changes to disk
+- `value` (String) Value name. Default value 'defaultValue'
+
+### Read-Only
+
+- `id` (String) The ID of this resource.
 
 ## Import
 

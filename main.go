@@ -6,6 +6,9 @@ import (
 	"github.com/matthisholleville/terraform-provider-haproxy/internal/provider"
 )
 
+// Provider documentation generation.
+//go:generate go run github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs generate // -provider-name haproxy
+
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
 		ProviderFunc: func() *schema.Provider {
