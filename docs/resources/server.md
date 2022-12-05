@@ -3,12 +3,12 @@
 page_title: "haproxy_server Resource - terraform-provider-haproxy"
 subcategory: ""
 description: |-
-  haproxy_bind manage bind.
+  haproxy_server manage server.
 ---
 
 # haproxy_server (Resource)
 
-`haproxy_bind` manage bind.
+`haproxy_server` manage server.
 
 
 
@@ -17,14 +17,14 @@ description: |-
 
 ### Required
 
-- `address` (String) Address to bind
-- `name` (String) Frontend name
-- `parent_name` (String) Frontend name related to this bind
+- `address` (String) Server address to bind
+- `name` (String) Server name
+- `parent_name` (String) Backend name related to this bind
 - `port` (Number) Server port
 
 ### Optional
 
-- `check` (String) Enable or Disable backend check
+- `check` (String) Enable or Disable backend check - default disabled, possible values: enabled, disabled
 
 ### Read-Only
 

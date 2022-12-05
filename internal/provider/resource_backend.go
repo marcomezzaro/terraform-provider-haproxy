@@ -29,12 +29,12 @@ func resourceBackend() *schema.Resource {
 				Type:        schema.TypeString,
 				Required:    true,
 				ForceNew:    true,
-				Description: "Frontend name",
+				Description: "Backend name",
 			},
 			"balance_algorithm": {
 				Type:  schema.TypeString,
 				Required: true,
-				Description: "backend balance algo",
+				Description: "Backend balance algorithm - Possible values: roundrobin, leastconn",
 			},
 		},
 	}

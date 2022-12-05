@@ -12,7 +12,7 @@ import (
 
 func resourceServer() *schema.Resource {
 	return &schema.Resource{
-		Description:   "`haproxy_bind` manage bind.",
+		Description:   "`haproxy_server` manage server.",
 		CreateContext: resourceServerCreate,
 		ReadContext:   resourceServerRead,
 		UpdateContext: resourceServerUpdate,
@@ -24,13 +24,13 @@ func resourceServer() *schema.Resource {
 			"address": {
 				Type:        schema.TypeString,
 				Required:    true,
-				Description: "Address to bind",
+				Description: "Server address to bind",
 			},
 			"name": {
 				Type:        schema.TypeString,
 				Required:    true,
 				ForceNew:    true,
-				Description: "Frontend name",
+				Description: "Server name",
 			},
 			"port": {
 				Type:  schema.TypeInt,
@@ -41,12 +41,12 @@ func resourceServer() *schema.Resource {
 				Type: schema.TypeString,
 				Optional: true,
 				Default: "disabled",
-				Description: "Enable or Disable backend check",
+				Description: "Enable or Disable backend check - default disabled, possible values: enabled, disabled",
 			},
 			"parent_name": {
 				Type:  schema.TypeString,
 				Required: true,
-				Description: "Frontend name related to this bind",
+				Description: "Backend name related to this bind",
 			},
 		},
 	}

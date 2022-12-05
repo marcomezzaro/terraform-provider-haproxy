@@ -24,8 +24,8 @@ resource "haproxy_backend" "my-backend" {
 
 ### Required
 
-- `balance_algorithm` (String) backend balance algo
-- `name` (String) Frontend name
+- `balance_algorithm` (String) Backend balance algorithm - Possible values: roundrobin, leastconn
+- `name` (String) Backend name
 
 ### Optional
 
