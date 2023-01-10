@@ -5,6 +5,9 @@
     <img src="https://dashboard.snapcraft.io/site_media/appmedia/2019/11/terraform.png" alt="Terraform logo" title="Terraform" align="right" height="100" />
 </a>
 
+# TEMPORARY FORKED REPO
+follow new provider: https://github.com/marcomezzaro/terraform-provider-haproxy-pf
+
 # Terraform Provider to configure HAProxy
 
 - Website: https://www.terraform.io
